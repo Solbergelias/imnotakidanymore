@@ -1,12 +1,22 @@
+﻿'This game want you to guess an fotball player'#gdgfdgfdgfd
+
+
+'(player: Zlatan)'
 facit = 'Zlatan'
 
+'Here we define the right player and the outcome of the right answer'
+-
 def rätt_spelare(gissning):
     if gissning == facit:
         print('Rätt spelare!')
         return True
+'Outcome of the wrong answer'
     else:
         print('fel, gissa igen!')
         return False
+
+'Here i inserted the starting question'
+
 while True:
     gissning = input('Gissa fotbollspelaren jag tänker på!: ')
     if rätt_spelare(gissning) == True:
